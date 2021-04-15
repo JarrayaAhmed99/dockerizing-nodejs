@@ -24,8 +24,11 @@ stage('Checkout Source')
          stage('building addressbook image')
     {
       steps {
+          script
+          {
         addressbook= docker.build(registry1 , "-f ${env.WORKSPACE}/Dockerfile.development .")
-            }   
+          } 
+          }   
     }
         
         
