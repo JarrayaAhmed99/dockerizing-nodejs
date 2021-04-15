@@ -1,6 +1,13 @@
 pipeline {
 agent any
     stages{
+   stage('pwd')
+    {
+      steps {
+        sh'pwd'
+            }    
+        
+    
 stage('Checkout Source')
     {
       steps {
