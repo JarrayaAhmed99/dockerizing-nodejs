@@ -26,7 +26,7 @@ stage('Checkout Source')
       steps {
           script
           {
-        addressbook= docker.build(registry1 , "-f ${env.WORKSPACE}/Dockerfile.development .")
+        addressbook= docker.build(addresbook , "-f ${env.WORKSPACE}/Dockerfile.development .")
           } 
           }   
     }
