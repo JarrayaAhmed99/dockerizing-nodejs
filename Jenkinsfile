@@ -12,7 +12,7 @@ agent any
 stage('Checkout Source')
     {
       steps {
-        git url:'https://github.com/JarrayaAhmed99/dockerizing-nodejs.git', branch:'main'
+        git url:'https://github.com/JarrayaAhmed99/dockerizing-nodejs.git', branch:'master'
             }
      }
           }
