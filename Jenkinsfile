@@ -1,7 +1,8 @@
 pipeline {
     environment {
     addresbook = "jarrayaahmed99/addresbook"
-    
+    registryCredential = 'dockerpassword'
+    addressbook=''
     }
 agent any
     stages{
