@@ -1,4 +1,8 @@
 pipeline {
+    environment {
+    addresbook = "jarrayaahmed99/addresbook"
+    
+    }
 agent any
     stages{
    stage('pwd')
@@ -15,6 +19,19 @@ stage('Checkout Source')
         git url:'https://github.com/JarrayaAhmed99/dockerizing-nodejs.git', branch:'master'
             }
      }
+        
+         stage('building addressbook image')
+    {
+      steps {
+        addressbook= docker.build(registry1 , "-f ${env.WORKSPACE}/Dockerfile.development .")
+            }   
+    }
+        
+        
+        
+        
+        
+        
           }
 
 
